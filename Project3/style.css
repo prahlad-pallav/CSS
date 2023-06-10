@@ -1,0 +1,66 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 50px;
+    width: 100px;
+    background-color: hotpink;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    box-shadow: 1px 1px 8px black;
+}
+
+#box1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+p{
+    z-index: 3;
+    color: white;
+}
+
+#box2{
+    position: absolute;
+    z-index: 2;
+    width: 0px;
+    justify-content: start;
+    align-items: start;
+    background-color: black;
+
+
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-direction: normal;
+}
+
+#box1:hover{
+    cursor: pointer;
+}
+
+@keyframes anime {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+
+
+
